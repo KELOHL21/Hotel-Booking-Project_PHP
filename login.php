@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./Src/Stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="./Src/Stylesheet/stylesheet_login.css">
 </head>
 
 <body>
     <container class="login">
 
         <h1>Heaven Haven</h1>
-        <form action="home.php" method="post">
+        <form class="log_form" action="home.php" method="post">
 
             <label for="firstname">Your Name</label>
             <input type="text" name="firstName">
@@ -30,3 +30,4 @@
 </body>
 
 </html>
+
