@@ -1,0 +1,15 @@
+*{box-sizing: border-box;}
+
+body{
+    background-image: url(../Images/Capetown.jpg);
+    background-size: cover;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: fit-content;
+    text-align: left;
+   
+}
