@@ -1,0 +1,30 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: aquamarine;
+}
+.Header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.welcome_message{
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.info_required{
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.info_form{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
