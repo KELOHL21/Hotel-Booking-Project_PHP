@@ -10,7 +10,6 @@ This project will be made with PHP and it will be a OOP based Booking App
 .Search for specific accommodations
 .Comparing two accommodations
 .Booking reservations
-.Viewing previous bookings
 
 ## Requirements
 
