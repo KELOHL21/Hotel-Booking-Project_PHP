@@ -11,8 +11,8 @@
     },
 
     {
-      "name":"Bay Hotel",
-      "image":"/Src/Images/Bay hotel.jpg",
+      "name":"The Bay Hotel",
+      "image":"./Src/Images/Bay hotel.jpg",
       "location":"69 Victoria Road, Camps Bay,Cape Town",
       "price":1000,
       "amenities":"Coffee shop,Restaurant,Breakfast available,Breakfast buffet,Breakfast in the room,Complimentary welcome drink,Happy hour,Kid-friendly buffet"

@@ -166,7 +166,7 @@ nav a:hover {
     position: absolute;
 }
 
-/*--------------------------------------------Hotel Display--------------------------------------------------*/
+/*--------------------------------------------Hotels Display--------------------------------------------------*/
 
 .hotel_cards{
     border: 1px solid black;
@@ -177,9 +177,16 @@ nav a:hover {
     margin-top: 5px;
 }
 
-.compare_button{
-    border-radius: 20%;
+.hotel_display{
+    display: flex;
+    justify-content: space-between;
 }
+
+.hotel_img{
+    contain: content;
+}
+
+
 
 /*-------------------------------------------Footer----------------------------------------------------------*/
 

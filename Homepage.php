@@ -85,9 +85,13 @@ $logo_name = "Hotel Haven";
          
     ?>
      
-     <?php hotel_create($HotelContent); ?>
+     <?php 
      
+     hotel_create($HotelContent);
      
+     sort($HotelContent); ?>
+     
+
     </main>
 
 </body>
