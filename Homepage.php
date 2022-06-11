@@ -19,15 +19,18 @@ $logo_name = "Hotel Haven";
 
 <body>
 
+    <!--Navbar-->
     <?php
     include("../Hotel Booking Project/Src/includes/nav.inc.php")
     ?>
 
+    <!--Header-->
     <container class="intro">
 
         <div class="welcome_message">
 
             <?php
+            
             //convert into session
             $firstname = $_POST["firstName"];
             $email = $_POST["email"];
@@ -35,13 +38,14 @@ $logo_name = "Hotel Haven";
             echo '<h1>Welcome</h1>' . $firstname;
             echo '<br>';
             echo "<p>Cape Town the MotherCity. Its vibrant colourful and adventurous.Everywhere you go you'll be amazed.
-          Choose from a variety of hotels to enjoy your stay.As they say in Cape 'Heres iet lekker'. </p>";
+              Choose from a variety of hotels to enjoy your stay.As they say in Cape 'Heres iet lekker'. </p>";
 
             ?>
         </div>
 
         <div class="info_required">
-            <h1>Information Required</h1>
+
+          <h1>Information Required</h1>
 
             <form class="info_form" action="./home.php" method="post">
 
@@ -68,11 +72,32 @@ $logo_name = "Hotel Haven";
     </container>
 
     <main>
-        <?php
-        require("../Hotel Booking Project/Src/includes/hotels.inc.php")
-        ?>
+    
+    <?php
+
+         require("./Src/includes/hotel_accom.inc.php");
+         
+         $_SESSION['hotels_booking']= [];
+         
+         $HotelContent = file_get_contents('./Src/json/hotels.json');
+         
+         $HotelContent = json_decode($HotelContent,true);
+         
+    ?>
+     
+     <?php hotel_create($HotelContent); ?>
+     
+     
     </main>
 
 </body>
+
+<footer>
+
+<?php
+include("../Hotel Booking Project/Src/includes/footer.inc.php")
+?>
+
+</footer>
 
 </html>

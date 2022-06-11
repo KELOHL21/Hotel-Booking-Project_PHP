@@ -13,8 +13,11 @@
 <body>
     <container class="login">
 
-        <h1>Heaven Haven</h1>
-        <form class="log_form" action="home.php" method="post">
+        <div class="login_info">
+            
+        <h1>Sign in </h1>
+
+        <form class="log_form" action="Homepage.php" method="post">
 
             <label for="firstname">Your Name</label>
             <input type="text" name="firstName">
@@ -25,8 +28,16 @@
             <input type="submit">
 
         </form>
+        </div>
+
+        <div class="logo_img">
+
+          <h1>LOGO</h1>
+
+        </div>
 
     </container>
+
 </body>
 
 </html>

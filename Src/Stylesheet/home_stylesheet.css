@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+  body{
+      background-color: teal ;
+  }
+
 .intro{
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +42,7 @@
 }
 
 
-/*Nav Bar*/
+/*-------------------------------------Navigation Bar--------------------------------------------------------*/
 header{
     background-color: rgb(219, 38, 38);
     margin: -10px;
@@ -160,4 +164,36 @@ nav a:hover {
 
 #search_mag{
     position: absolute;
+}
+
+/*--------------------------------------------Hotel Display--------------------------------------------------*/
+
+.hotel_cards{
+    border: 1px solid black;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.compare_button{
+    border-radius: 20%;
+}
+
+/*-------------------------------------------Footer----------------------------------------------------------*/
+
+.footer_links{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkcyan;
+}
+
+.footer_list{
+    background-color: white;
+}
+
+.copyright_tag{
+    text-align: center;
+    
 }

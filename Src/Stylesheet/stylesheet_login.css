@@ -7,15 +7,27 @@ body{
 
 .login{
     display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(0, 0, 0);
-    width: 50vw;
-    padding: 10px;
-    text-align: center;
+    justify-content: space-evenly;
+    border: 1px black solid;
     margin: auto;
+    margin-top: 20rem;
+    width: 50vw;
+    background-color: white;
+    opacity: 70%;
 }
 
-.log_form{
+.login_info{
     display: flex;
     flex-direction: column;
+    width: 45%;
+    margin-left: -5rem;
+}
+
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1{
+    font-size: 25px;
 }

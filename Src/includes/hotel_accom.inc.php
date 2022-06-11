@@ -1,18 +1,40 @@
 <?php
 
-function hotel_create($hotels){
+function hotel_create($hotels) {
+
     foreach ($hotels as $index => $hotel_array) {
+        
         $index = $index + 1;
     echo "
-    <div class='hotel_cards'>
+      <div class='hotel_cards'>
 
-    <img src=" . $hotel_array['image'] . " alt=" . $hotel_array['name'] . " class='hotel_img'>
-    <p>" . $hotel_array['location'] . "</p>
-    <p>R" . $hotel_array['price'] . " per night</p>
+      <h1>
+      ".$hotel_array['name']."
+      </h1>
+
+      <container class='hotel_display'>
+
+        <img src= ". $hotel_array['image'] ." alt= ".  $hotel_array['name'] ." class='hotel_img'>
+
+      <div class='hotel_info'>
+          <p> ". $hotel_array['location'] ." </p>
+          <p>R ".  $hotel_array['price'] ." per night</p>
+   
+        <div class='button'>
+        
+            <button type='button' class='booking_button'>Book</button>
     
-    </div>
+            <button type='button' class='compare_button'>Compare</button>
+    
+            </div>
+
+        </div>
+
+      </div>
+
+      </container>
     ";
+
     }
 }
 
-?>
