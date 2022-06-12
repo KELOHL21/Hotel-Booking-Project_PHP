@@ -10,9 +10,8 @@ $logo_name = "Hotel Haven";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$logo_name</title>
-
-    <link rel="stylesheet" href="./Src/Stylesheet/home_stylesheet.css">
+    <title><?php echo $logo_name ?></title>
+    <link rel="stylesheet" href="../Hotel Booking Project/Src/stylesheet/home_stylesheet.css">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 
 </head>
@@ -23,7 +22,7 @@ $logo_name = "Hotel Haven";
     <?php
     include("../Hotel Booking Project/Src/includes/nav.inc.php")
     ?>
-
+    
     <!--Header-->
     <container class="intro">
 

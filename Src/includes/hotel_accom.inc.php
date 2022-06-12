@@ -19,8 +19,9 @@ function hotel_create($hotels) {
 
            <div class='hotel_info'>
 
-               <p> ". $hotel_array['location'] ." </p>
-               <p>R ".  $hotel_array['price'] ." per night</p>
+               <p class='info'> ". $hotel_array['location'] ." </p>
+               <p class='hotel_description'>".$hotel_array['description']."</p>
+               <p class='hotel_price'>R ".  $hotel_array['price'] ." per night</p>
        
                 <div class='buttons'>
     
