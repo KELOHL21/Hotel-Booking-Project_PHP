@@ -4,7 +4,7 @@
 
     {
         "name":"The President Hotel",
-        "image":"/Hotel Booking Project/Src/Images/president hotel.jpg",
+        "image":"Src/images/President hotel.jpg",
         "location":"4 Alexander Road,Cape Town,Seapoint",
         "price":1500,
         "amenities":"Paid private parking on-site,Free High Speed Internet (WiFi),Heated pool,Bar / lounge,Highchairs available,Airport transportation"
@@ -12,23 +12,23 @@
 
     {
       "name":"The Bay Hotel",
-      "image":"./Src/Images/Bay hotel.jpg",
+      "image":"Src/images/bayhotel.jpg",
       "location":"69 Victoria Road, Camps Bay,Cape Town",
       "price":1000,
       "amenities":"Coffee shop,Restaurant,Breakfast available,Breakfast buffet,Breakfast in the room,Complimentary welcome drink,Happy hour,Kid-friendly buffet"
     },
-
+ 
     {
       "name":"City Lodge Hotel",
-      "image":"/Hotel Booking Project/Src/Images/city lodge hotel.jpg",
-      "location":"2 Hill Road, Green Point, Cape Town",
+      "image":"Src/images/citylodge.jpg",
+      "location":"2 Hill Road, V&A WaterFront, Cape Town",
       "price":950,
       "amenities":"Free parking,Free High Speed Internet (WiFi),Pool,Fitness Centre with Gym / Workout Room,Free breakfast,Babysitting,Children Activities (Kid / Family Friendly)"
     },
 
     {
       "name":"The Fountain Hotel",
-      "image":"/Hotel Booking Project/Src/Images/Fountain hotel.jpg",
+      "image":"Src/images/fountain.jpg",
       "location":"1 Saint Georges Mall Street Cape Town",
       "price":1050,
       "amenities":"Free High Speed Internet (WiFi),Pool,Breakfast available,Breakfast buffet,Breakfast in the room,Spa,Couples massage,Baggage storage,Concierge"

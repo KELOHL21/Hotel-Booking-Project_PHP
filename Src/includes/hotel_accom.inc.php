@@ -15,7 +15,7 @@ function hotel_create($hotels) {
 
         <container class='hotel_display'>
 
-            src= ". $hotel_array['image'] ." alt= ".  $hotel_array['name'] ." class='hotel_img'>
+           <img src= ". $hotel_array['image'] ." alt= ".  $hotel_array['name'] ." class='hotel_img'>
 
            <div class='hotel_info'>
 
