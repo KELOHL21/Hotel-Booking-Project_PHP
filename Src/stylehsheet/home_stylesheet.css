@@ -44,7 +44,7 @@
 
 /*-------------------------------------Navigation Bar--------------------------------------------------------*/
 header{
-    background-color: rgb(219, 38, 38);
+    background-color: rgb(57, 209, 171);
     margin: -10px;
     text-align: center;
     position: fixed;
@@ -169,12 +169,13 @@ nav a:hover {
 /*--------------------------------------------Hotels Display--------------------------------------------------*/
 
 .hotel_cards{
-    border: 1px solid black;
     text-align: center;
     width: 70vw;
     margin: auto;
     margin-bottom: 10px;
     margin-top: 5px;
+    background-color: white;
+    opacity: 80%;
 }
 
 .hotel_display{
@@ -183,7 +184,25 @@ nav a:hover {
 }
 
 .hotel_img{
-    contain: content;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    float: center;
+    width:  450px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info{
+    text-align: center;
+    font-size: 25px;
+}
+
+.hotel_description{
+    padding: 5px;
+    font-size: 15px;
+    text-align: justify;
+    width: 90%;
+    margin-left: 15px;
 }
 
 
@@ -193,7 +212,7 @@ nav a:hover {
 .footer_links{
     display: flex;
     justify-content: space-evenly;
-    background-color: darkcyan;
+    background-color: rgb(0, 0, 0);
 }
 
 .footer_list{
