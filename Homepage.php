@@ -11,7 +11,7 @@ $logo_name = "Hotel Haven";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $logo_name ?></title>
-    <link rel="stylesheet" href="../Hotel Booking Project/Src/stylesheet/home_stylesheet.css">
+    <link rel="stylesheet" href="./Src/Stylesheet/home_stylesheet.css">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 
 </head>
@@ -46,7 +46,7 @@ $logo_name = "Hotel Haven";
 
           <h1>Information Required</h1>
 
-            <form class="info_form" action="./home.php" method="post">
+            <form class="info_form" action="./comparing_page.php" method="post">
 
                 <div class="data">
                     <label for="days staying">Days staying?</label>
@@ -55,20 +55,22 @@ $logo_name = "Hotel Haven";
 
                 <div class="data">
                     <label for="dates">From:</label>
-                    <input type="date" name="from_date">
+                    <input type="date" value="<?php echo date("Y-m-d"); ?>" name="from_date">
                 </div>
 
                 <div class="data">
                     <label for="dates">To:</label>
-                    <input type="date" name="to_date">
+                    <input type="date" value="<?php echo date("Y-m-d"); ?>" name="to_date">
                 </div>
 
-                <input type="submit">
+                <input type="submit" name="submit">
 
             </form>
         </div>
 
     </container>
+
+    
 
     <main>
     
