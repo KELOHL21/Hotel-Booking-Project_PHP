@@ -62,7 +62,6 @@ $logo_name = "Hotel Haven";
 
             </form>
 
-            
 
         </div>
 
@@ -73,7 +72,7 @@ $logo_name = "Hotel Haven";
     <main>
     
     <?php
-         require("Src/includes/hotel_accom.inc.php");
+         require("./Src/includes/hotel_accom.inc.php");
          
          $_SESSION['hotels_booking']= [];
          
@@ -93,7 +92,7 @@ $logo_name = "Hotel Haven";
     </main>
 
 </body>
-
+ 
 <footer>
 
 <?php
