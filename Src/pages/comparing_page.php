@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels Compare</title>
-    <link rel="stylesheet" href="./Src/stylehsheet/home_stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet/home_stylesheet.css">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-     <!--Navbar-->
-     <?php
-    include("../Hotel Booking Project/Src/includes/nav.inc.php")
+    <!--Navbar-->
+    <?php
+    include("../includes/nav.inc.php");
+    echo "<br>";
+
+    echo $HotelContent[2]["price"];
     ?>
+
+    
 
 <h1>Day STAYING</h1>
 
@@ -34,7 +39,7 @@
 
      }   
      
-     function hotel_create($hotels) {
+    /* function hotel_create($hotels) {
 
         foreach ($hotels as $index => $hotel_array) {
             
@@ -44,9 +49,18 @@
 
         }
 
-    }
+    }*/
      
 
 ?>
+
+<footer>
+
+<?php
+include("../includes/footer.inc.php")
+?>
+
+</footer>
+
 </body>
 </html>

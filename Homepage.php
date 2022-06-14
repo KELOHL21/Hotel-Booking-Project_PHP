@@ -11,7 +11,7 @@ $logo_name = "Hotel Haven";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $logo_name ?></title>
-    <link rel="stylesheet" href="./Src/Stylesheet/home_stylesheet.css">
+    <link rel="stylesheet" href="./Src/stylesheet/home_stylesheet.css">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,7 +20,7 @@ $logo_name = "Hotel Haven";
 
     <!--Navbar-->
     <?php
-    include("../Hotel Booking Project/Src/includes/nav.inc.php")
+    include("./Src/includes/nav.inc.php")
     ?>
     
     <!--Header-->
@@ -46,12 +46,7 @@ $logo_name = "Hotel Haven";
 
           <h1>Information Required</h1>
 
-            <form class="info_form" action="./comparing_page.php" method="post">
-
-                <div class="data">
-                    <label for="days staying">Days staying?</label>
-                    <input type="number" name="days_stayed">
-                </div>
+            <form class="info_form" action="./Src/pages/comparing_page.php" method="post">
 
                 <div class="data">
                     <label for="dates">From:</label>
@@ -66,6 +61,9 @@ $logo_name = "Hotel Haven";
                 <input type="submit" name="submit">
 
             </form>
+
+            
+
         </div>
 
     </container>
@@ -75,22 +73,21 @@ $logo_name = "Hotel Haven";
     <main>
     
     <?php
-
-         require("./Src/includes/hotel_accom.inc.php");
+         require("Src/includes/hotel_accom.inc.php");
          
          $_SESSION['hotels_booking']= [];
          
          $HotelContent = file_get_contents('./Src/json/hotels.json');
          
          $HotelContent = json_decode($HotelContent,true);
-         
+
     ?>
      
      <?php 
      
      hotel_create($HotelContent);
      
-     sort($HotelContent); ?>
+     ?>
      
 
     </main>
@@ -100,7 +97,7 @@ $logo_name = "Hotel Haven";
 <footer>
 
 <?php
-include("../Hotel Booking Project/Src/includes/footer.inc.php")
+include("./Src/includes/footer.inc.php")
 ?>
 
 </footer>

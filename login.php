@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./Src/Stylesheet/stylesheet_login.css">
+    <link rel="stylesheet" href="./Src/stylehsheet/stylesheet_login.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             
         <h1>Sign in </h1>
 
-        <form class="log_form" action="Homepage.php" method="post">
+        <form class="log_form" action="./Homepage.php" method="post">
 
             <label for="firstname">Your Name</label>
             <input type="text" name="firstName">

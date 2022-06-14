@@ -9,7 +9,7 @@ function hotel_create($hotels) {
     echo "
     <div class='hotel_cards'>
 
-      <h1>
+      <h1 class='hotel_name'>
       ".$hotel_array['name']."
       </h1>
 
