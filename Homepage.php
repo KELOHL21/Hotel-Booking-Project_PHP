@@ -46,7 +46,7 @@ $logo_name = "Hotel Haven";
 
           <h1>Information Required</h1>
 
-            <form class="info_form" action="./Src/pages/comparing_page.php" method="post">
+            <form class="info_form" action="./Homepage.php" method="post">
 
                 <div class="data">
                     <label for="dates">From:</label>
@@ -60,6 +60,7 @@ $logo_name = "Hotel Haven";
 
                 <input type="submit" name="submit">
 
+            
             </form>
 
 
@@ -67,7 +68,32 @@ $logo_name = "Hotel Haven";
 
     </container>
 
-    
+    <?php
+             if (isset($_POST['submit'])) {
+         
+                $date_start = ($_POST['from_date']); //From which date
+                 
+                 $date_end = ($_POST['to_date']); //To which date
+                
+                 $date1 = strtotime($date_end); 
+                 
+                 $date2 = strtotime($date_start);
+              
+                 $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
+              
+                 echo $difference. " days staying";
+              
+                echo "<br>";
+              
+                 echo 'From : '.$date_start;
+              
+                 echo "<br>";
+                 
+                 echo 'To : '.$date_end;
+              
+                 echo "<br>";   
+             }
+                ?>
 
     <main>
     
@@ -79,12 +105,8 @@ $logo_name = "Hotel Haven";
          $HotelContent = file_get_contents('./Src/json/hotels.json');
          
          $HotelContent = json_decode($HotelContent,true);
-
-    ?>
      
-     <?php 
-     
-     hotel_create($HotelContent);
+         hotel_create($HotelContent);
      
      ?>
      

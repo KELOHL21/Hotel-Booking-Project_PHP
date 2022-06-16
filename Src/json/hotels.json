@@ -9,7 +9,7 @@
   },
 
   {
-    "name": "The Bay Hotel",
+    "name" : "The Bay Hotel",
     "image": "Src/images/bayhotel.jpg",
     "location": "69 Victoria Road, Camps Bay,Cape Town",
     "description":"On the doorstep of the Atlantic, The Bay Hotel is an exclusive members-only hotel where our mission is to provide excellent service and unforgettable experiences.",

@@ -20,48 +20,7 @@
 
 <h1>Day STAYING</h1>
 
-
-
-<?php
-         require('../includes/comparing.inc.php');
-
-         $_SESSION['hotels_booking']= [];
-         
-         $HotelContent = file_get_contents('../json/hotels.json');
-         
-         $HotelContent = json_decode($HotelContent,true);
-
-         $price= $HotelContent[0]["price"]; //Getting price of index in between []
-
-         echo "<br>";
-
-     if (isset($_POST['submit'])) {
-         
-        $date_start = ($_POST['from_date']);
-         
-         $date_end = ($_POST['to_date']);
-        
-         $date1 = strtotime($date_end); 
-         
-         $date2 = strtotime($date_start);
-
-         $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
-     }   
-
-     $price_of_stay = $price * $difference; // Calculation for the amount of money for the day staying
-     
-     echo $price_of_stay;
-   
-?>
-
-
-
-<?
-
-compare($HotelContent); 
-
-echo "hello world"
-
+<?php require('../includes/comparing.inc.php')
 ?>
 
 
