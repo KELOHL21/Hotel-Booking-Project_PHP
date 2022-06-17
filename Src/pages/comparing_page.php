@@ -20,10 +20,21 @@
 
 <h1>Day STAYING</h1>
 
-<?php require('../includes/comparing.inc.php')
-?>
+<main>
+    <?php
 
+      $_SESSION['hotels_booking']= [];
+         
+      $HotelContent = file_get_contents('../json/hotels.json');
+      
+      $HotelContent = json_decode($HotelContent,true);
 
+    ?>
+
+    <?php require('../includes/comparing.inc.php')
+    ?>
+
+</main>
 
 <footer>
 

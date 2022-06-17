@@ -23,21 +23,11 @@ function hotel_create($hotels) {
                <p class='hotel_description'>".$hotel_array['description']."</p>
                <p class='hotel_price'>R ".  $hotel_array['price'] ." per night</p>
 
-                   
-    
-                    <form action='/booking_page.php' method='post'> 
-                        <div class='buttons'>
-                            <button type='button' class='booking_button'>Book</button>
-                        </div>
-                    </form>
-
-                    <form action='/compare_page.php' method='post'>
-
-                        <div class='buttons'>
-                            <button type='button' class='compare_button'>Compare</button>
-                        </div>
-
-                    </form>
+                <div class='buttons'>
+                    <button type='button' class='booking_button'><a href='Src/pages/booking_page.php'>Book</a></button>
+                
+                    <button type='button' class='compare_button'><a href='Src/pages/comparing_page.php'>Compare</a></button>
+                </div>    
     
            </div>
 

@@ -11,39 +11,38 @@
 </head>
 
 <body>
+
     <container class="login">
 
-        <div class="login_info">
-            
-        <h1>Sign in </h1>
+        <div class="logo&mesage">
 
-        <?php
+        <img class="logo" src="./Src/images/Hotel Logo.jpg">
 
-            if (isset($_POST['login_btn'])) {
-    
-                $firstname = $_POST["firstName"];
-                $email = $_POST["email"];
-                 echo $firstname;
-            }
+        <h1>Welcome to Hotel Haven </h1>
 
-        ?>
-
-        <form class="log_form" action="./Homepage.php" method="post">
-
-            <label for="firstname">Your Name</label>
-            <input type="text" name="firstName">
-
-            <label for="email">Email Address</label>
-            <input type="email" name="email">
-
-            <button name="login_btn"> Login</button>
-
-        </form>
         </div>
 
-        <div class="logo_img">
+        
+        <div class="login_info">
+            
+                <?php
+                if (isset($_POST['submit_btn'])) {
+    
+                    $firstname = isset($_POST["firstName"]);
+                    $email = $_POST["email"];
+                    echo $firstname;
+                }
 
-          <h1>LOGO</h1>
+                ?>
+                <form class="log_form" action="./Homepage.php" method="post">
+
+                    <input type="text" name="firstName" placeholder="Your Name">
+
+                    <input type="email" name="email" placeholder="Your Email Address">
+
+                    <button name="submit_btn">Submit</button>
+
+                </form>
 
         </div>
 

@@ -1,27 +1,19 @@
 <?php
+         
+       function compare($hotel){
+        foreach ($hotel as $index => $compare_array) {
+          $index = $index;
 
-echo "Hello World <br>";
+          
 
-$hotels_string = file_get_contents('../json/hotels.json');
+        }
+       }
+      
 
-$hotels = json_decode($hotels_string,true);
-
-$hotel_price = 1500;
-
-foreach ($hotels as $hotel ) {
-  foreach ( $hotel[ 'price' ] as $key => $val ) {
-    if ($key <= $hotel_price) {
-      echo ($hotel['name']. "price is ".$val);
-    }
-  }
-}
 
  // $price_of_stay = $price * $difference;Calculation for the amount of money for the day staying
 
 //echo "R" .$price_of_stay;
-
-
-
 
 /*$search_key = 'toy';
 foreach($json as $elem) {
@@ -30,6 +22,14 @@ foreach($json as $elem) {
          echo($elem['name']." - ".$val);
       }
    }
+}*/
+
+/*foreach($json as $elem)  {
+   echo( $elem['name']. " : " );
+   foreach ($elem['cars'] as $car ) {
+      echo($car['make']. ", ");
+   }
+   echo("<br/>");
 }*/
 
 

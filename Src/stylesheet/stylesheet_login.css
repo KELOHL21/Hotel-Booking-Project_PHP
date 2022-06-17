@@ -3,24 +3,33 @@
 body{
     background-image: url(../Images/Capetown.jpg);
     background-size: cover;
+    object-fit: contain;
 }
 
 .login{
     display: flex;
-    justify-content: space-evenly;
-    border: 1px black solid;
+    flex-direction: column;
     margin: auto;
-    margin-top: 20rem;
-    width: 50vw;
+    margin-top: 10rem;
+    width: 25vw;
+    height: 50vh;
     background-color: white;
-    opacity: 70%;
+}
+
+
+@media screen and (max-width:900px) {
+    
+}
+
+.logo_img{
+    margin: auto;
 }
 
 .login_info{
     display: flex;
     flex-direction: column;
     width: 45%;
-    margin-left: -5rem;
+    margin: auto;
 }
 
 input{
@@ -30,4 +39,10 @@ input{
 
 h1{
     font-size: 25px;
+}
+
+.logo{
+    align-items: center;
+    width: 60%;
+    height: 60%;
 }
