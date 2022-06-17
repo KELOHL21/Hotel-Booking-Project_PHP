@@ -16,34 +16,6 @@ foreach ($hotels as $hotel ) {
   }
 }
 
-if (isset($_POST['submit'])) {
-         
-  $date_start = ($_POST['from_date']); //From which date
-   
-   $date_end = ($_POST['to_date']); //To which date
-  
-   $date1 = strtotime($date_end); 
-   
-   $date2 = strtotime($date_start);
-
-   $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
-
-   echo $difference. " days staying";
-
-  echo "<br>";
-
-   echo 'From : '.$date_start;
-
-   echo "<br>";
-   
-   echo 'To : '.$date_end;
-
-   echo "<br>";
-
-   echo 'R'.$hotels[1]['price'];
-   
-}   
-
  // $price_of_stay = $price * $difference;Calculation for the amount of money for the day staying
 
 //echo "R" .$price_of_stay;

@@ -28,25 +28,17 @@ $logo_name = "Hotel Haven";
 
         <div class="welcome_message">
 
-            <?php
-            
-            //convert into session
-            $firstname = $_POST["firstName"];
-            $email = $_POST["email"];
+            <h1>Welcome <?php  echo  $_POST['firstName']?> </h1>
 
-            echo '<h1>Welcome</h1>' . $firstname;
-            echo '<br>';
-            echo "<p>Cape Town the MotherCity. Its vibrant colourful and adventurous.Everywhere you go you'll be amazed.
-              Choose from a variety of hotels to enjoy your stay.As they say in Cape 'Heres iet lekker'. </p>";
+            <p>Cape Town the Mother City. Its vibrant colourful and adventurous.Everywhere you go you'll be amazed.Choose from a variety of hotels to enjoy your stay.As they say in the Cape 'Heres iet lekker'. </p>
 
-            ?>
         </div>
 
         <div class="info_required">
 
           <h1>Information Required</h1>
 
-            <form class="info_form" action="./Homepage.php" method="post">
+            <form class="info_form" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" >
 
                 <div class="data">
                     <label for="dates">From:</label>
@@ -63,37 +55,44 @@ $logo_name = "Hotel Haven";
             
             </form>
 
+            <?php
+             if (isset($_POST['submit'])) {
+         
+                        $date_start = ($_POST['from_date']); //From which date
+                        
+                        $date_end = ($_POST['to_date']); //To which date
+                        
+                        $date1 = strtotime($date_end); 
+                        
+                        $date2 = strtotime($date_start);
+                    
+                        $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
+                    
+                        echo 
+                        "
+                        <div class='display_info'>
+                        
+                        <h1>Booking Information</h1>
+
+                        <p>Days staying : ".$difference." days</p>
+
+                        <p>From: ".$date_start."</p>
+
+                        <p>To: ".$date_end."</p>
+                        
+                        </div>
+
+                        ";
+                     
+                    }
+            ?>
+
 
         </div>
 
     </container>
 
-    <?php
-             if (isset($_POST['submit'])) {
-         
-                $date_start = ($_POST['from_date']); //From which date
-                 
-                 $date_end = ($_POST['to_date']); //To which date
-                
-                 $date1 = strtotime($date_end); 
-                 
-                 $date2 = strtotime($date_start);
-              
-                 $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
-              
-                 echo $difference. " days staying";
-              
-                echo "<br>";
-              
-                 echo 'From : '.$date_start;
-              
-                 echo "<br>";
-                 
-                 echo 'To : '.$date_end;
-              
-                 echo "<br>";   
-             }
-                ?>
+ 
 
     <main>
     

@@ -17,6 +17,17 @@
             
         <h1>Sign in </h1>
 
+        <?php
+
+            if (isset($_POST['login_btn'])) {
+    
+                $firstname = $_POST["firstName"];
+                $email = $_POST["email"];
+                 echo $firstname;
+            }
+
+        ?>
+
         <form class="log_form" action="./Homepage.php" method="post">
 
             <label for="firstname">Your Name</label>
@@ -25,7 +36,7 @@
             <label for="email">Email Address</label>
             <input type="email" name="email">
 
-            <input type="submit">
+            <button name="login_btn"> Login</button>
 
         </form>
         </div>
