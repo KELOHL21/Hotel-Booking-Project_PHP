@@ -14,7 +14,7 @@
 
     <container class="login">
 
-        <div class="logo&mesage">
+        <div class="logo_mesage">
 
         <img class="logo" src="./Src/images/Hotel Logo.jpg">
 
@@ -40,7 +40,7 @@
 
                     <input type="email" name="email" placeholder="Your Email Address">
 
-                    <button name="submit_btn">Submit</button>
+                    <button class="login_submitbtn" name="submit_btn">Submit</button>
 
                 </form>
 

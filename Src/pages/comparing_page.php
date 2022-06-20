@@ -18,10 +18,13 @@
 
     ?>
 
-<h1>Day STAYING</h1>
+<h1>Hotels</h1>
 
 <main>
-    <?php
+
+    <?php 
+    
+      require('../includes/comparing.inc.php');
 
       $_SESSION['hotels_booking']= [];
          
@@ -29,10 +32,10 @@
       
       $HotelContent = json_decode($HotelContent,true);
 
+      compare($HotelContent);
+
     ?>
 
-    <?php require('../includes/comparing.inc.php')
-    ?>
 
 </main>
 

@@ -335,7 +335,6 @@ flex-direction: column;
     margin-right: 2px;
 }
 
-
 .booking_button{
     background-color: rgb(46, 158, 121);
     color: white;
@@ -347,6 +346,10 @@ flex-direction: column;
     border-top-right-radius:25px ;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.booking_button:hover{
+    opacity: 70%;
 }
 
 .compare_button{
@@ -362,7 +365,34 @@ flex-direction: column;
     border-bottom-right-radius: 25px;
 }
 
+.compare_button:hover{
+    opacity: 65%;
+}
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.display_info{
+font-size: 18px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+/*---------------------------------------Comparing Page ------------------------------------------*/
+
+.comparing_details{
+  background-color:white;
+}
+
+.hotel_info_diplay{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
 
 /*-------------------------------------------Footer----------------------------------------------*/
 
