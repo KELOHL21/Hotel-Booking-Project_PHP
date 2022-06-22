@@ -1,7 +1,3 @@
-<?php
-session_start();
-$logo_name = "Hotel Haven";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +6,7 @@ $logo_name = "Hotel Haven";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $logo_name ?></title>
+    <title>Hotel Haven</title>
     <link rel="stylesheet" href="./Src/stylesheet/home_stylesheet.css">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 
@@ -56,38 +52,28 @@ $logo_name = "Hotel Haven";
             </form>
 
             <?php
-             if (isset($_POST['submit'])) {
-         
-                        $date_start = ($_POST['from_date']); //From which date
-                        
-                        $date_end = ($_POST['to_date']); //To which date
-                        
-                        $date1 = strtotime($date_end); 
-                        
-                        $date2 = strtotime($date_start);
-                    
-                        $difference = ($date1-$date2)/60/60/24; // Function to determine day staying
-                    
-                        echo 
-                        "
-                        <div class='display_info'>
-                        
-                        <h1>Booking Information</h1>
+                $request = $_SERVER['REQUEST_URI'];
+                $basepath = "Hotel Booking Project/";
+                $request = str_replace($basepath, "", $request);
+                $request = strtok($request, '?');
+                switch ($request) {
+                    case '/':
+                        require __DIR__ . '/Src/includes/hotel_accom.inc.php';
+                        break;
+                    case '/home':
+                        require __DIR__ . '/Homepage.php';
+                        break;
+                    case '/comparing_page':
+                        require __DIR__ . '/Src/pages/comparing_page.php';
+                        break;    
+                    case '/bookings':
+                        require __DIR__ . '/Src/pages/booking.php';
+                        break;
+                };
 
-                        <p>Days staying : ".$difference." days</p>
-
-                        <p>From: ".$date_start."</p>
-
-                        <p>To: ".$date_end."</p>
-                        
-                        </div>
-
-                        ";
-                     
-                    }
-            ?>
-
-
+              include('./Src/includes/cal_days.inc.php')
+             ?>
+ 
         </div>
 
     </container>
