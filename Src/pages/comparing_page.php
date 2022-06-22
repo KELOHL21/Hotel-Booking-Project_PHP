@@ -8,31 +8,49 @@
     <link rel="stylesheet" href="{{asset('../stylesheet/home_stylesheet.css'}}">
     <script src="https://kit.fontawesome.com/e4ad388285.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <!--Navbar-->
+    
     <?php
+
+    //-----Navbar----
+
     include("../includes/nav.inc.php");
 
-    echo "<br>";
+  
+    if ($_SESSION['difference'] > 0) {
+    
+      echo 
+    "
+     <br>
+
+    <h1>Hotels</h1>
+    
+    <div class='requiredinfo_display'>
+    
+    <h1>Trip Info</h1>
+    
+    <p>Days staying : ".$_SESSION['difference']." Days </p>
+    
+    <p> From : ".$_SESSION['date_start']." </p>
+    
+    <p>To :".$_SESSION['date_end']."</p>
+    
+    
+    </div>";
+
+  } elseif($_SESSION['difference'] < 0) { //Need to not display anything
+    echo 
+    "
+    <br>
+    <br>
+    <p class='requiredinfo_display'>Please fill in the correct dates</p>";
+  }
+    
     ?>
 
-<h1>Hotels</h1>
-
-<div class="requiredinfo_display">
-
-<h1>Trip Info</h1>
-
-<p>Days staying : <?php echo $_SESSION['difference']?> Days </p>
-
-<p> From :<?php echo $_SESSION['date_start']?> </p>
-
-<p>To : <?php echo $_SESSION['date_end']?> </p>
-
-
-</div>
-
-<main>
+    <main class="hotels">
 
     <?php 
     
@@ -48,8 +66,10 @@
 
     ?>
 
+    </main>
 
-</main>
+</body>
+
 
 <footer>
 
@@ -59,5 +79,5 @@ include("../includes/footer.inc.php")
 
 </footer>
 
-</body>
+
 </html>

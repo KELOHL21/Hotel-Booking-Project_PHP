@@ -200,9 +200,9 @@ nav a:hover {
 
 
 
-/*------------------------------------Hotels Display----------------------*/
+/*------------------------------------Hotels Display----------------=-----------*/
 
-.hotel_cards{
+.hotel_card{
     text-align: center;
     width: 70vw;
     margin: auto;
@@ -389,6 +389,19 @@ h1{
 
 /*---------------------------------------Comparing Page ------------------------------------------*/
 
+.hotels{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:900px) {
+   .hotels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+}
+
 .requiredinfo_display{
 text-align: center;
 font-size: 20px;
@@ -397,23 +410,32 @@ opacity: 70%;
 width: 50vw;
 margin: auto;
 }
+
 .comparing_info{
     background-color: rgb(238, 241, 241);
     margin-top: 5px;
     border: 1px solid black;
+    margin-left: 5px;
     
 }
 
-.hotel_info_display{
+.hotel_display_info{
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
-@media screen and (min-width:950px) {
- .hotel_info_diplay{
+@media screen and (min-width:900px) {
+  .hotel_diplay_info{
     display: flex;
-    justify-content: space-evenly;
-}   
+    flex-direction: row;
+    margin-left: 15rem;
+    height: 100vh;
+}  
+}
+
+.hotel_info{
+    text-align: center;
 }
 
 

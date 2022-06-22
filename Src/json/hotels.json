@@ -22,7 +22,7 @@
   {
     "index":"03",
     "name": "City Lodge Hotel",
-    "image": "Src/images/citylodge.jpg",
+    "image": "./Src/images/citylodge.jpg",
     "location": "2 Hill Road, V&A WaterFront, Cape Town",
     "description": "City Lodge Hotel Group has a variety of hotels dedicated to providing you with comfort at a level that suits you. From basic,  functional rooms to magnificent luxury studios, we have the range and experience to give you unbelievable service, and exceptional accommodation",
     "price": 950,

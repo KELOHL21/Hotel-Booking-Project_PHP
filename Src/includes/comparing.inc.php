@@ -13,15 +13,17 @@
             $price= $index['price'];
 
             switch ($price) {
-               case '950  || 1000':
+               case '950  && 1000':
                   echo 
             
                   "
                   <container class='comparing_info'>
                   
-                  <section class='hotel_info_diplay'>
+                  <img src= ". $index['image'] ." alt= ".  $index['name'] ." class='hotel_img'>
+                  <section class='hotel_display_info'>
    
                   <div class='hotel_info'>
+                  <input type='hidden' value=" . $index['index']. " name='hotel_index'>
                   <h1>".$index['name']."</h1>
                   <p class='compare_descrip'>".$index['description']."</p>
                   </div>
@@ -49,15 +51,18 @@
                   ";
                   break;
                
-               case '1050 || 1500':
+               case '1050 && 1500':
                   echo 
                
                   "
-                  <container class='comparing_details'>
+                  <container class='comparing_info'>
                   
-                  <section class='hotel_info_diplay'>
+                  <img src= ". $index['image'] ." alt= ".  $index['name'] ." class='hotel_img'>
+
+                  <section class='hotel_display_info'>
    
                   <div class='hotel_info'>
+                  <input type='hidden' value=" . $index['index']. " name='hotel_index'>
                   <h1>".$index['name']."</h1>
                   <p class='compare_descrip'>".$index['description']."</p>
                   </div>
