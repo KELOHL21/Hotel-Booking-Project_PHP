@@ -2,7 +2,7 @@
   {
     "id":"1",
     "name": "The President Hotel",
-    "image": "images/President hotel.jpg",
+    "image": "Src/images/president.jpg",
     "location": "4 Alexander Road,Cape Town,Seapoint",
     "description":"Located in Bantry Bay between the vibrant city and the Atlantic Ocean, the President Hotel welcomes you to Cape Town and all its breathtaking sights, thrilling activities and inspiring experiences.Sophisticated luxury and personal service come standard, while local style, authentic artwork and innovative design set us apart as the most-loved destination hotel in the Mother City.It's all you love about Cape Town and more.",
     "price": 1500,
@@ -12,7 +12,8 @@
   {
     "id":"2",
     "name" : "The Bay Hotel",
-    "image": "images/bayhotel.jpg",
+    "image": "Src/images/bayhotel.jpg",
+    "image2":"Src/images/bay hotel 2.jpg",
     "location": "69 Victoria Road, Camps Bay,Cape Town",
     "description":"On the doorstep of the Atlantic, The Bay Hotel is an exclusive members-only hotel where our mission is to provide excellent service and unforgettable experiences.",
     "price": 1000,
@@ -22,7 +23,7 @@
   {
     "id":"3",
     "name": "City Lodge Hotel",
-    "image": "images/citylodge.jpg",
+    "image": "Src/images/citylodge.jpg",
     "location": "2 Hill Road, V&A WaterFront, Cape Town",
     "description": "City Lodge Hotel Group has a variety of hotels dedicated to providing you with comfort at a level that suits you. From basic,  functional rooms to magnificent luxury studios, we have the range and experience to give you unbelievable service, and exceptional accommodation",
     "price": 950,
@@ -32,7 +33,7 @@
   {
     "id":"4",
     "name": "The Fountain Hotel",
-    "image": "images/fountain.jpg",
+    "image": "Src/images/fountain.jpg",
     "location": "1 Saint Georges Mall Street Cape Town",
     "description":"Cape Town is a city with a colorful past, a fast-paced present, and a promising future. It is a fascinating city for every visitor. The Cape Town City Centre is a neighborhood encompassing many features of the past that imbues the Mother City with its vigorous energy today. In the middle of all of this is our hotel, Fountains Hotel.",
     "price": 1050,

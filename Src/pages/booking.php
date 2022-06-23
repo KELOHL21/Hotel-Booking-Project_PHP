@@ -18,3 +18,11 @@ $HotelContents = json_decode($HotelContents, true);
         <?php create_Bookings($HotelContents); ?>
 
 </main>
+
+<footer>
+
+<?php
+include("../includes/footer.inc.php")
+?>
+
+</footer>

@@ -438,6 +438,15 @@ margin: auto;
     text-align: center;
 }
 
+/* --------------------------------------Booking Page ------------------------------------------ */
+.accommodation-booking{
+    background-color: white;
+    height: 95vw;
+    width: 60vw;
+    margin: auto;
+    font-size: 20px;
+}
+
 
 /*-------------------------------------------Footer----------------------------------------------*/
 

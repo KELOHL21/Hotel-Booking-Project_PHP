@@ -92,6 +92,8 @@
          $HotelContent = json_decode($HotelContent,true);
      
          hotel_create($HotelContent);
+
+         echo $_SESSION['total_price'];
      
      ?>
      
