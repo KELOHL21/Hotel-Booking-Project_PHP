@@ -23,15 +23,21 @@ function hotel_create($hotels) {
                <p class='hotel_description'>".$hotel_array['description']."</p>
                <p class='hotel_price'>R ".  $hotel_array['price'] ." per night</p>
 
-                <div class='buttons'>
+                <form class='buttons' action='Src/pages/booking.php' method=get>
 
-                    <input type='hidden' value=" . $hotel_array['index']. " name='hotel_index'>
+                    <input type='hidden' value=" . $hotel_array['id']. " name='hotelbooking_id'>
 
-                    <button type='button' class='booking_button'><a class='links' href='Src\pages\booking.php'>Book</a></button>
+                    <button class='booking_button'>Book</button>
                 
-                    <button type='button' class='compare_button'><a  class='links' href='Src/pages/comparing_page.php'>Compare</a></button>
+                </form>
+
+                <form class='buttons' action='Src/pages/comparing_page.php' method=get>
+                        
+                <input type='hidden' value=" . $hotel_array['id']. " name='hotelcomparing_id'>
+
+                    <button class='compare_button'>Compare</button>
                     
-                </div>    
+                </form>    
     
            </div>
 
