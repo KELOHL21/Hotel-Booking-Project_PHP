@@ -14,11 +14,11 @@
 
     <container class="login">
 
-        <div class="logo_mesage">
-
-        <img class="logo" src="./Src/images/Hotel Logo.jpg">
+        <div class="logo_message">
 
         <h1>Welcome to Hotel Haven </h1>
+        
+        <img class="logo" src="./Src/images/Hotel Logo.png">
 
         </div>
 
@@ -30,15 +30,15 @@
     
                     $firstname = isset($_POST["firstName"]);
                     $email = $_POST["email"];
-                    echo $firstname;
+                    $_SESSION['firstname']= $firstname;
                 }
 
                 ?>
                 <form class="log_form" action="./Homepage.php" method="post">
 
-                    <input type="text" name="firstName" placeholder="Your Name">
+                    <input type="text" class="input_display" name="firstName" placeholder="Your Name">
 
-                    <input type="email" name="email" placeholder="Your Email Address">
+                    <input type="email" class="input_display" name="email" placeholder="Your Email Address">
 
                     <button class="login_submitbtn" name="submit_btn">Submit</button>
 

@@ -215,7 +215,19 @@ nav a:hover {
 .hotel_name{
 text-align: center;
 padding-top: 15px;
-font-size: 25px;
+font-size: 40px;
+}
+
+@media screen and (min-width:700px) {
+    .hotel_name{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .hotel_name{
+        font-size: 35px;
+    }
 }
 
 .hotel_display{
@@ -234,74 +246,26 @@ flex-direction: column;
 
 .hotel_img{
     float: center;
-    width:  5em;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     margin-left: 15px;
-}
-
-@media  screen and (min-width:420px) {
-    .hotel_img{
-        width: 10em;
-    }
-}
-
-@media  screen and (min-width:530px) {
-    .hotel_img{
-        width: 12em;
-    }
-}
-
-@media  screen and (min-width:564px) {
-    .hotel_img{
-        width: 13em;
-    }
-}
-
-@media screen and (min-width:610px) {
-    .hotel_img{
-        width:14em;
-    }
-}
-
-@media screen and (min-width:700px) {
-    .hotel_img{
-        width:15em;
-    }
-}
-
-@media screen and (min-width:750px) {
-    .hotel_img{
-        width:16em;
-    }
-}
-
-@media  screen and (min-width:780px) {
-    .hotel_img{
-        width: 17.5em;
-    }
-}
-
-@media screen and (min-width:830px) {
-    .hotel_img{
-        width: 25em;
-    }
-}
-
-@media screen and (min-width:890px) {
-    .hotel_img{
-        width: 39em;
-    }
 }
 
 @media screen and (min-width:900px) {
     .hotel_img{
         margin-bottom: 5px;
         margin-left: 5px;
-        width:  450px;
+        width:  500px;
         height: 250px;
     }
     
+} 
+
+@media screen and (min-width:1370px) {
+    .hotel_img{
+        width: 600px;
+    }
 }
 
 .info{
@@ -310,10 +274,12 @@ flex-direction: column;
 }
 
 .hotel_description{
-    margin: auto;
+    display: table;
+    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
     padding: 5px;
-    font-size: 15px;
-    text-align: justify;
+    text-align:center;
     width: 90%;
     font-size: 20px;
 }
@@ -341,7 +307,7 @@ flex-direction: column;
 }
 
 .booking_button{
-    background-color: rgb(46, 158, 121);
+    background-color: rgb(57, 216, 163);
     color: white;
     width: 100px;
     height: 30px;
@@ -381,10 +347,6 @@ flex-direction: column;
 
 .display_info{
 font-size: 18px;
-}
-
-h1{
-    font-size: 20px;
 }
 
 /*---------------------------------------Comparing Page ------------------------------------------*/

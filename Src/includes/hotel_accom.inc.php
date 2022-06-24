@@ -10,7 +10,9 @@ function hotel_create($hotels) {
     <container class='hotel_card'>
 
       <h1 class='hotel_name'>
+      
       ".$hotel_array['name']."
+
       </h1>
 
         <div class='hotel_display'>
