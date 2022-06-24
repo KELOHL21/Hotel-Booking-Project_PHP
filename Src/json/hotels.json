@@ -3,9 +3,10 @@
     "id":"1",
     "name": "The President Hotel",
     "image": "Src/images/president.jpg",
+    "stars":5,
     "location": "4 Alexander Road,Cape Town,Seapoint",
     "description":"Located in Bantry Bay between the vibrant city and the Atlantic Ocean, the President Hotel welcomes you to Cape Town and all its breathtaking sights, thrilling activities and inspiring experiences.Sophisticated luxury and personal service come standard, while local style, authentic artwork and innovative design set us apart as the most-loved destination hotel in the Mother City.It's all you love about Cape Town and more.",
-    "price": 1500,
+    "price": 1600,
     "amenities": "Paid private parking on-site,Free High Speed Internet (WiFi),Heated pool,Bar / lounge,Highchairs available,Airport transportation"
   },
 
@@ -13,9 +14,10 @@
     "id":"2",
     "name" : "The Bay Hotel",
     "image": "Src/images/bayhotel.jpg",
+    "stars":4,
     "location": "69 Victoria Road, Camps Bay,Cape Town",
     "description":"On the doorstep of the Atlantic, The Bay Hotel is an exclusive members-only hotel where our mission is to provide excellent service and unforgettable experiences.",
-    "price": 1000,
+    "price": 1250,
     "amenities": "Coffee shop,Restaurant,Breakfast available,Breakfast buffet,Breakfast in the room,Complimentary welcome drink,Happy hour,Kid-friendly buffet"
   },
 
@@ -23,6 +25,7 @@
     "id":"3",
     "name": "City Lodge Hotel",
     "image": "Src/images/citylodge.jpg",
+    "stars":4,
     "location": "2 Hill Road, V&A WaterFront, Cape Town",
     "description": "City Lodge Hotel Group has a variety of hotels dedicated to providing you with comfort at a level that suits you. From basic,  functional rooms to magnificent luxury studios, we have the range and experience to give you unbelievable service, and exceptional accommodation",
     "price": 950,
@@ -33,9 +36,32 @@
     "id":"4",
     "name": "The Fountain Hotel",
     "image": "Src/images/fountain.jpg",
+    "stars":3,
     "location": "1 Saint Georges Mall Street Cape Town",
     "description":"Cape Town is a city with a colorful past, a fast-paced present, and a promising future. It is a fascinating city for every visitor. The Cape Town City Centre is a neighborhood encompassing many features of the past that imbues the Mother City with its vigorous energy today. In the middle of all of this is our hotel, Fountains Hotel.",
-    "price": 1050,
+    "price": 1350,
     "amenities": "Free High Speed Internet (WiFi),Pool,Breakfast available,Breakfast buffet,Breakfast in the room,Spa,Couples massage,Baggage storage,Concierge"
+  },
+
+  {
+  "id":"5",
+  "name":"Pepperclub Hotel",
+  "image":"Src/images/pepperhotel.jpg",
+  "stars":5,
+  "location":"Corner Loop and Pepper street,Cape Town",
+  "description":"Immersed in the buzzing city life, Pepperclub Hotel is settled amongst Cape Town's most influential happenings, on Loop Street, hugging the lively Long Street. Whether you visit for work or play, our 5-star central Cape Town hotel and  spa presents guests with an understated sophistication and healthy balance of both.We offer guests the opportunity to truly make the most of their visit, whether they are spending the night or choosing to relax in our spa, we boast a distinguished experience like no other here at Pepperclub Hotel.",
+  "price":1950,
+  "amenities":"Spa,Pool,Breakfast free, Wi-Fi free"
+  },
+
+  {
+  "id":"6",
+  "name":"La Splendida Hotel",
+  "image":"Src/images/LaSplendidahotel.jpg",
+  "stars":3,
+  "location":"121 Beach Road, Mouille Point, Cape Town",
+  "description":"La Splendida's prime location in Mouille Point, close to Cape Town Stadium, Green Point Park and the V&A Waterfront, adds to the hotel's appeal and the convenience it offers guests. Surrounded by the bustling Sea Point promenade and sidewalk cafes, the hotel offers a vibrant, seaside atmosphere.",
+  "price":1050,
+  "amenities":" Airport shuttle ,Non-smoking rooms ,Parking ,Room service ,Restaurant, Free WiFi, Tea/coffee maker in all rooms, Bar, Beachfront"
   }
 ]

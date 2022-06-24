@@ -29,8 +29,11 @@
                 if (isset($_POST['submit_btn'])) {
     
                     $firstname = isset($_POST["firstName"]);
-                    $email = $_POST["email"];
+                    
                     $_SESSION['firstname']= $firstname;
+
+                    $email = $_POST["email"];
+                    
                 }
 
                 ?>

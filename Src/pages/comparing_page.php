@@ -23,10 +23,8 @@
     
       echo 
     "
-     <br>
+    <br>
 
-    <h1>Hotels</h1>
-    
     <div class='requiredinfo_display'>
     
     <h1>Trip Info</h1>
@@ -41,11 +39,9 @@
     </div>";
 
   } elseif($_SESSION['difference'] < 0) { //Need to not display anything
+    
     echo 
-    "
-    <br>
-    <br>
-    <p class='requiredinfo_display'>Please fill in the correct dates</p>";
+    " <br> <p class='requiredinfo_display'>Please fill in the correct dates</p>";
   }
     
     ?>

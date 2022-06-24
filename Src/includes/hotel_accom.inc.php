@@ -28,6 +28,7 @@ function hotel_create($hotels) {
                 <form class='buttons' action='Src/pages/booking.php' method=get>
 
                     <input type='hidden' value=" . $hotel_array['id']. " name='hotelbooking_id'>
+                    
 
                     <button class='booking_button'>Book</button>
                 
@@ -36,7 +37,9 @@ function hotel_create($hotels) {
                 <form class='buttons' action='Src/pages/comparing_page.php' method=get>
                         
                 <input type='hidden' value=" . $hotel_array['id']. " name='hotelcomparing_id'>
-
+                
+                <input type='hidden' value=" . $hotel_array['stars'] . " name='hotel_stars'>
+                
                     <button class='compare_button'>Compare</button>
                     
                 </form>    

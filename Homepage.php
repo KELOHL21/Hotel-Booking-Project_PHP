@@ -24,7 +24,7 @@
 
         <div class="welcome_message">
 
-            <h1>Welcome <?php  echo  isset($_POST['firstName'])?> </h1>
+            <h1>Welcome <?php  echo (isset($_SESSION['firstname'])) ?> </h1>
 
             <p>Cape Town the Mother City. Its vibrant colourful and adventurous.Everywhere you go you'll be amazed.Choose from a variety of hotels to enjoy your stay.As they say in the Cape 'Heres iet lekker'. </p>
 
@@ -92,8 +92,6 @@
          $HotelContent = json_decode($HotelContent,true);
      
          hotel_create($HotelContent);
-
-         echo $_SESSION['total_price'];
      
      ?>
      

@@ -38,7 +38,7 @@ function create_Bookings($hotels){
 
                           <p> R ".$hotel_array['price']." per night</p>
   
-                          <p> In total is R ".$_SESSION['total_price']."</p>
+                          <p> In total is R ".$_SESSION['totalPrice']."</p>
 
                         </div>
 
@@ -51,6 +51,18 @@ function create_Bookings($hotels){
                         </div>
 
                         </section>
+
+                        <form class='buttons_booking' action='.H/Homepage.php' method=get>
+    
+                        <button class='booking_button'>Cancel</button>
+                    
+                        </form>
+
+                        <form class='buttons_booking' action='Src/pages/booking.php' method=get>
+    
+                        <button class='booking_button'>Book</button>
+                    
+                        </form>
 
                 </container>
              ";

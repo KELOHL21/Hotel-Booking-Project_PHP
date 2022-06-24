@@ -1,7 +1,9 @@
 <?php
        function compare($Hotels){
 
-      $Hotel_id = $_GET['hotelcomparing_id'];
+      // $Hotel_id = $_GET['hotelcomparing_id'];
+
+         $Hotel_stars =$_GET['hotel_stars'];
          
         foreach ($Hotels as $index => $hotel_array)  {
 
@@ -9,62 +11,52 @@
 
             $total_price = $_SESSION['difference'] * $hotel_array['price'] ;
 
-            $price= $hotel_array['price'];
+            if ( $hotel_array['stars'] == $Hotel_stars ) {
 
-            if ( $index == $Hotel_id ) {
+                     $_SESSION['totalPrice']= $total_price;
                
-               if ($price == 950  || $price == 1000 ) {
-                           echo 
-                        
-                        "
-                        <container class='comparing_details'>
-                        
-                        <section class='hotel_info_diplay'>
+                     echo 
+                  
+                  "
+                  <container class='comparing_details'>
+                  
+                  <section class='hotel_info_diplay'>
 
-                        <div class='hotel_info'>
-                        <h1>".$hotel_array['name']."</h1>
-                        <p class='compare_descrip'>".$hotel_array['description']."</p>
-                        </div>
+                  <img src= ". $hotel_array['image'] ." alt= ".  $hotel_array['name'] ." class='hotelcompare_img'>
 
-                        <div div class='amentities'>
-                        <h2>Amenities</h2>
-                        <p> ".$$hotel_array['amenities']."</p>
-                        </div>
+                  <div class='hotel_info'>
+                  <h1>".$hotel_array['name']."</h1>
+                  <p class='compare_descrip'>".$hotel_array['description']."</p>
+                  </div>
 
-                        </section>
+                  <div div class='amentities'>
+                  <h2>Amenities</h2>
+                  <p> ".$hotel_array['amenities']."</p>
+                  </div>
 
-                        <div class='final_prices'>
+                  </section>
 
-                        <p> R ".$hotel_array['price']." per night</p>
-                        <p> Total Price R ".$total_price."<p>
-
-                        </div>
-                        
-
-                        <button type='button' name='book'> Book </button>
-                        
-                        
-                        </container>
-
-                        ";
-                  }
-                     else {
-
-                        echo"sorry";
-
-                       }
+                  <div class='final_prices'>
                
-            }   
-         
+                  <h2> Prices </h2>
 
-         }
+                  <p> R ".$hotel_array['price']." per night</p>
+                  <p> Total Price R ".$total_price."<p>
 
-         $_SESSION['total_price']= $total_price;
+                  </div>
+                  
+                  <form class='buttons' action='./booking.php' method=get>
 
+                  <input type='hidden' value=" . $hotel_array['id']. " name='hotelbooking_id'>
+
+                  <button class='booking_button'>Book</button>
+              
+                  </form>
+
+                  </container>
+
+                  ";
        }
 
-                  
-            
-     
-      
-
+       }
+   }
