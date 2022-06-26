@@ -7,7 +7,7 @@ function hotel_create($hotels) {
         $index = $index + 1;
 
     echo "
-    <container class='hotel_card'>
+    <container class='hotel_display_block''>
 
       <h1 class='hotel_name'>
       

@@ -109,6 +109,7 @@ input::placeholder{
     .login_submitbtn{
         width: 14.5rem; 
         margin-left:3.5rem ;
+        color: rgb(30, 172, 172);
     }
 }
 
