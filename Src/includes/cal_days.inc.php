@@ -1,5 +1,9 @@
 <?php
     if (isset($_POST['submit'])) {
+
+           $firstname = $_POST['firstName'];
+
+           $email = $_POST['email'];
          
           $date_start = ($_POST['from_date']); //From which date
           
@@ -17,9 +21,17 @@
 
           $_SESSION['difference']= $difference;
 
-            if ($difference > 0) { //Number of days cannot be less than 0
-          
-                    echo 
+    } if (empty($firstname) || empty($email)) { // Figure out how to make ure hotels till display
+
+        echo "Name and email are mandatory!";
+
+            exit;
+    }
+    
+
+          if($date2 <= $date1) {
+            
+             echo 
                     "
                     <div class='display_info'>
                     
@@ -34,9 +46,8 @@
                     </div>
 
                     ";
-                } elseif ($difference < 0) {
-                    echo "<p class='date_error_message'> You're Date input is incorrect</p>";
-                }
-        
-      }
+          }else{
+            echo" <p> Please fill in your date correctly </p>";
+          }
+      
 ?>

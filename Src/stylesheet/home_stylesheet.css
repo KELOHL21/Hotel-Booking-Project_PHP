@@ -127,6 +127,7 @@ nav ul{
 }
 
 nav li{
+    margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
 }
@@ -141,7 +142,7 @@ nav li{
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -351,20 +352,20 @@ font-size: 18px;
 
 /*---------------------------------------Comparing Page ------------------------------------------*/
 
-.hotels{
+.hotels_details{
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (min-width:900px) {
-   .hotels{
+   .hotels_details{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 } 
 }
 
-.requiredinfo_display{
+.clientinfo_display{
 text-align: center;
 font-size: 15px;
 background-color: rgb(245, 248, 250);
@@ -376,7 +377,7 @@ margin: auto;
 
 .trip_info{
   display: flex;
-flex-direction: row;  
+  flex-direction: row;  
 }
 
 .comparing_info{
@@ -384,7 +385,6 @@ flex-direction: row;
     margin-top: 5px;
     border: 1px solid black;
     margin-left: 5px;
-    
 }
 
 .hotel_display_info{
@@ -406,15 +406,49 @@ flex-direction: row;
     text-align: center;
 }
 
+.compare_second_info{
+ display: flex;
+ flex-direction: row;
+}
+
+.amenities{
+    text-align: justify;
+    width: 50%;
+}
+
+
 /* --------------------------------------Booking Page ------------------------------------------ */
 .accommodation-booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: white;
-    height: 95vw;
+    opacity: 90%;
+    height: 55vw;
     width: 60vw;
     margin: auto;
     font-size: 20px;
 }
 
+.trip-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.accommodation-description{
+    text-align: left;
+    text-align: justify;
+    padding: 5px;
+    width: 50vw;
+}
+
+.booking_buttons{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+}
 
 /*-------------------------------------------Footer----------------------------------------------*/
 

@@ -18,10 +18,10 @@ session_start();
 
   <nav>
     <ul>
-      <li><a href="../">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="Homepage.php">Home</a></li> <!---figure out--->
+      <li><a href="#">About</a></li>  <!--Leads no where-->
+      <li><a href="#">Blog</a></li>  <!--Leads no where-->
+      <li><a href="#">Contact</a></li> <!--Leads no where-->
       <input type="text" id="search_bar" class="search_bar" placeholder="Search"/></input>
     </ul>
     

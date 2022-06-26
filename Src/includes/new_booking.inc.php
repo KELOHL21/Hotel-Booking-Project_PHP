@@ -21,16 +21,21 @@ function create_Bookings($hotels){
                     <p class='accommodation-location'>" . $hotel_array['location'] . "</p>
 
                     
-
-                      <div class='accommodation-info'>  //Flex row
+                      <div class='accommodation-info'> 
                             
                             <p class='accommodation-description'>" . $hotel_array['description'] . "</p>
 
-                            <p class='accommodation-description'>" . $hotel_array['amenities'] . "</p>
+                            <div class='amenities'>
+
+                            <h3>Amenities</h3>
+
+                            <p>" . $hotel_array['amenities'] . "</p>
+
+                            </div>
 
                         </div>
-                    
-                        <section class='trip-info'> //Flex row
+                  
+                    <section class='trip-info'>
 
                           <p>Days staying : ".$_SESSION['difference']." Days </p>
 
@@ -50,17 +55,17 @@ function create_Bookings($hotels){
 
                         </div>
 
-                        </section>
+                   </section>
 
-                        <form class='buttons_booking' action='.H/Homepage.php' method=get>
+                        <form class='booking_buttons' action='Homepage.php' method=get>
     
                         <button class='booking_button'>Cancel</button>
                     
                         </form>
 
-                        <form class='buttons_booking' action='Src/pages/booking.php' method=get>
+                        <form class='booking_buttons' action='Src/pages/booking.php' method=get>
     
-                        <button class='booking_button'>Book</button>
+                        <button class='confirm_button'>Confirm</button>
                     
                         </form>
 

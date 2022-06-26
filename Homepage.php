@@ -36,6 +36,14 @@
 
             <form class="info_form" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" >
 
+                <div class="client_info">
+
+                <input type="text" class="input_display" name="firstName" placeholder="Your Name">
+
+                <input type="email" class="input_display" name="email" placeholder="Your Email Address">
+                
+                </div>
+
                 <div class="data">
                     <label for="dates">From:</label>
                     <input type="date" value="<?php echo date("Y-m-d"); ?>" name="from_date">

@@ -18,7 +18,7 @@
                      echo 
                   
                   "
-                  <container class='comparing_details'>
+                  <container class='hotels_details'>
                   
                   <section class='hotel_info_diplay'>
 
@@ -29,12 +29,16 @@
                   <p class='compare_descrip'>".$hotel_array['description']."</p>
                   </div>
 
-                  <div div class='amentities'>
-                  <h2>Amenities</h2>
-                  <p> ".$hotel_array['amenities']."</p>
-                  </div>
-
                   </section>
+
+                  <div class='compare_second_info'>
+
+                  <div>
+
+                  <h2>Amenities</h2>
+                  <p class= 'amenities'> ".$hotel_array['amenities']."</p>
+
+                  </div>
 
                   <div class='final_prices'>
                
@@ -43,6 +47,8 @@
                   <p> R ".$hotel_array['price']." per night</p>
                   <p> Total Price R ".$total_price."<p>
 
+                  </div>
+                  
                   </div>
                   
                   <form class='buttons' action='./booking.php' method=get>

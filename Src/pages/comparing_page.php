@@ -25,7 +25,7 @@
     "
     <br>
 
-    <container class='requiredinfo_display'>
+    <container class='clientinfo_display'>
     
     <h1>Trip Info</h1>
 
@@ -52,7 +52,7 @@
     
     ?>
 
-    <main class="hotels">
+    <main >
 
     <?php 
     
