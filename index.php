@@ -34,7 +34,7 @@
 
           <h1>Information Required</h1>
 
-            <form class="info_form" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" >
+            <form class="info_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
 
                 <div class="client_info">
 
@@ -80,6 +80,7 @@
                 };
 
               include('./Src/includes/cal_days.inc.php')
+              
              ?>
  
         </div>

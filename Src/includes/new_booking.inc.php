@@ -65,7 +65,7 @@ function create_Bookings($hotels){
 
                         <form class='booking_buttons' action='Src/pages/booking.php' method=get>
     
-                        <button class='confirm_button'>Confirm</button>
+                        <button class='confirm_button'  name='confirm' >Confirm</button>
                     
                         </form>
 

@@ -6,7 +6,6 @@ This project will be made with PHP and it will be a OOP based Booking App
 
 ## Features
 
-.The ability to sign in and out
 .Search for specific accommodations
 .Comparing two accommodations
 .Booking reservations
@@ -20,8 +19,6 @@ This project will be made with PHP and it will be a OOP based Booking App
 - Data must persist between pages
 
 ## Backlog
-
-- Add Sign In/Register pages and json files
-- Add booking page and comparison
+- Add Final styling
 - Add ability to search for accommodations
 - Add in email extension via Composer
