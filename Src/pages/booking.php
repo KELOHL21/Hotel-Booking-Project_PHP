@@ -1,3 +1,9 @@
+
+<head>
+    <link rel="stylesheet" href="../stylesheet/home_stylesheet.css"> 
+    <script src="https://kit.fontawesome.com/45c101dd7d.js" crossorigin="anonymous"></script>
+</head>
+
 <?php
 
  //--Navbar--

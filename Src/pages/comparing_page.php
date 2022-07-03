@@ -21,37 +21,35 @@
   
     if ($_SESSION['difference'] > 0) {
     
-      echo 
-    "
-    <br>
-
+    ?>
     <container class='client_info_display'>
     
     <h1>Trip Info</h1>
 
     <div class='trip_info'>
 
-    <p>Days staying : ".$_SESSION['difference']." Days </p>
+    <p>Days staying : <? echo $_SESSION['difference']?> Days </p>
 
     <div class ='date_display'>
     
-    <p> From : ".$_SESSION['date_start']." </p>
+    <p> From : <? echo $_SESSION['date_start'] ?> </p>
     
-    <p>To :".$_SESSION['date_end']."</p>
+    <p>To : <? echo $_SESSION['date_end']?> </p>
     </div>
 
     </div>
     
-    </container>";
+    </container>
 
-  } elseif($_SESSION['difference'] < 0) { //Need to not display anything *Fix
+    <?php
+
+    } elseif($_SESSION['difference'] < 0) { //Need to not display anything *Fix
     
     echo 
     " <br> <p class='requiredinfo_display'>Please fill in the correct dates</p>";
   }
-    
     ?>
-
+  
     <main >
 
     <?php 

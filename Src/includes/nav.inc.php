@@ -12,7 +12,7 @@ session_start();
     
 <header>
  <!--Logo Image needs to come there-->
-  <h1 class="logo">Logo</h1>
+  <img src="/Src/images/HotelLogo.png" alt="hotel_logo" class="hotel_logo">
 
   <input type="checkbox" id="nav_toggle" class="nav_toggle">
 

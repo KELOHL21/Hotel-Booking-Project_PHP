@@ -368,7 +368,7 @@ font-size: 18px;
 .hotels_details{
     display: flex;
     flex-direction: column;
-    background-color: #1DC2B4;
+    border: 1px black solid;
 }
 
 @media screen and (min-width:900px) {
@@ -376,6 +376,8 @@ font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: aliceblue;
+
 } 
 }
 

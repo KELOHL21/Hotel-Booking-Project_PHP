@@ -20,7 +20,9 @@
     
     $_SESSION['difference']= $difference;
 
-if (isset($_POST['submit']) && $difference<0) { 
+
+if (isset($_POST['submit']) && $difference > 0 ) { 
+
   //Figure out how to not allow submission if one of the fields arent filled out
 
       echo 
